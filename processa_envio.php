@@ -55,13 +55,13 @@
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = 'smtp.gmail.com';                       // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'testeweb2019.02@gmail.com';        // SMTP username
-    $mail->Password = '!@#$4321';                           // SMTP password
+    $mail->Username = 'Example@example.com';        // SMTP username
+    $mail->Password = '12345';                           // SMTP password
     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 587;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('testeweb2019.02@gmail.com', 'Aplicacao do vitu');          // add a sender
+    $mail->setFrom('Example@example.com', 'Example');          // add a sender
     $mail->addAddress($mensagem->__get('para'));     // Add a recipient
   //  $mail->addReplyTo('info@example.com', 'Information');
   // $mail->addCC('cc@example.com');
